@@ -31,7 +31,7 @@ struct Args {
     #[arg(short, long, env = "PORT", default_value = "3000")]
     port: u16,
 
-    /// Combined bind address and port (overrides --host and --port)
+    /// Combined bind address and port (overrides --bind and --port)
     #[arg(long, env = "LISTEN_ADDR")]
     addr: Option<SocketAddr>,
 
